@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/experience/index",
+    "pages/workpicture/index",
+    "pages/devicecondition/index",
+    "pages/index2/index2",
+    "pages/index5/index5",
+    "pages/experience/datapre/datapre",
+    "pages/experience/feature/feature",
+    "pages/experience/GBDT/GBDT",
+    "pages/experience/result/result"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "轴承检测实验",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/experience/index",
+        "text": "实验",
+        "iconPath": "images/anli.png",
+        "selectedIconPath": "images/anli2.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "运行",
+        "iconPath": "images/fjicon.png",
+        "selectedIconPath": "images/fjicon2.png"
+      },
+      {
+        "pagePath": "pages/devicecondition/index",
+        "text": "工况",
+        "iconPath": "images/gk.png",
+        "selectedIconPath": "images/gk2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

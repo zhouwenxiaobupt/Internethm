@@ -1,0 +1,48 @@
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" style="font-size: 18px;background:#283033;color:white;line-height: 45px;">
+      当前设备编号
+      <text style="color:#fe9400;border-left:1px solid white;padding-left:2px;font-weight:bold;font-size:18px">{{array[index]}}</text>
+    </view>
+  </picker>
+</view>
+<!-- <view class="box1">
+  <view class='row'>当前状态：
+    <text style="color:green;font-weight:bold" data-i="i" wx:if='{{labels[i].tag==(i-1)}}'>正常</text>
+    <text style="color:green;font-weight:bold" data-i="i" wx:if='{{labels[i].tag==5}}'>故障</text>
+  </view>
+</view> -->
+
+
+
+<view class="box1">
+  <view style="width:100%;font-size: 16px;background:#283033;color:white;line-height: 45px;text-align:center;">诊断时间
+    <text style="font-size:16px;border-left:1px solid white;padding-left:2px;color:#fe9400;">{{time}}</text>
+  </view>
+</view>
+
+
+
+<scroll-view scroll-x scroll-y style="width: 100%; height: 240px;margin-top:2px">
+  <view class='gkContentBox'>
+    <view class="gkTitle">属性</view>
+    <view class="gkTitle">数据检测</view>
+  </view>
+  
+  <view class='gkContentBox' wx:for='{{result}}' wx:for:item='item'>
+    <view class="gkContent" style="font-weight:bold; border-right:1px solid black;border-bottom:1px solid grey;background: rgba(0, 0, 1, 0.096);">{{item.key}}</view>
+    <view class="gkContent" style=" border-bottom:1px solid grey;background: rgba(0, 0, 0, 0.096);" data-i="i">{{item.arr[i]}}</view>
+  </view>
+</scroll-view>
+
+ <view class="box2">
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{allConditionName}}">
+    
+    <view class="picker">
+      <view style="margin-top:5px;width:80px;height:20px;line-height:20px;background:#283033;color:white;font-size:12px;text-align:center">{{allParams[index2].text}}</view>
+    </view>
+  </picker>
+ </view> 
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>

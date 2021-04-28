@@ -1,0 +1,9 @@
+.container{
+  width: 100%;
+}
+.button{
+  margin-top: 50px;
+  width: 90% !important;
+  border:1px solid #ccc;
+  color:rgb(243, 190, 76);
+}
